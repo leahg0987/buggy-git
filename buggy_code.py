@@ -5,14 +5,12 @@ def average_lists(list1, list2):
     :param list2: a list
     :return: the average
     """
-    for num in list2:
-        list1.append(num)
+    list1 += list2
     sum = 0
-    amount = 0
+    amount = len(list1)
     for number in list1:
         sum += number
-        amount += 1
-        average = sum / amount
+    average = sum / amount
     print("the average is " + str(average))
 
 def main():
